@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/2157df5358.js" crossorigin="anonymous"></script>
+    <!-- tailwind and daisy ui links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="w-11/12 mx-auto">
+
+    <header  class="bottom-1 border-b-2">
+        <!-- navbar start -->
+        <!-- left part -->
+        <div class="my-8 navbar bg-base-100">
+            <div class="navbar-start">
+             <img src="./Logo.png" alt="">
+            </div>
+          
+            <!-- middle part -->
+            <div class="navbar-center">
+              <button class="text-xl bg-slate-300 px-4 py-2 rounded-lg">Sort by view</button>
+            </div>
+            
+            <!-- right part -->
+            <div class="navbar-end">
+              <button onclick="handleBlogBtn()" id="blog-btn" class="text-xl text-white bg-[#FF1F3D] px-4 py-2 rounded-lg">Blog</button>
+            </div>
+            
+
+          </div>
+        <!-- navbar end -->
+          
+
+    </header>
+
+    <main>
+           <!-- tabs container start -->
+          <section class="mb-8">
+            <div class="tab-container w-full mt-8">
+                <div id="tab-container" class="tabs text-center flex justify-center gap-6">
+
+                   <!-- space to append tab names -->
+
+                  </div> 
+            </div>
+          </section>
+          <!-- tabs container end -->
+
+          <!-- by default hidden div for api of no data  start-->
+          <section>
+              <div id="no-data-div" class="hidden">
+                
+                     <div class="flex flex-col items-center my-20">
+                        <img class="w-32" src="./Icon.png" alt="">
+                        <h2 class="text-3xl font-semibold mt-4">Oops!! Sorry</h2>
+                        <h2 class="text-3xl font-semibold"> There is no content here</h2>
+                     </div>
+                
+              </div>
+          </section>
+          <!-- by default hidden div for api of no data end-->
+          
+          <!-- cards contsiner start -->
+          <section>
+                <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                   
+                    <!-- space to append cards dynamically -->
+                     
+                </div>
+          </section>
+           <!-- cards contsiner end -->
+    </main>
+
+
+
+    <!-- js files -->
+    <script src="./script.js"></script>
+</body>
+</html>
